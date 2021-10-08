@@ -1,3 +1,2 @@
 # Python
-This is my work that I have completed with within my CodingDojo Boot camp that leads up to my exam which focuses on utilizing front end: HTML, Backend: Python, and Database: MySQL in order to create a CRUD project. 
-Also, this has my CRUD exam that I have completed. 
+Built out a full stack application in Python backend language, utilizing Flask Micro framework, Pip Package Manager, to be able to allow proper interface and api calls for the client-server relationship. 
