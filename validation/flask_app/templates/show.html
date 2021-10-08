@@ -1,0 +1,23 @@
+<h1>Submitted Information</h1>
+<table>
+    <thead>
+        <th>Name: </th>
+        <th>Dojo Location: </th>
+        <th>Favorite Location: </th>
+        <th>Comment: </th>
+    </thead>
+    <tbody>
+        
+    {% for student in students %}
+        <tr>
+            <td>{{student.name}}</td>
+            <td>{{student.location}}</td>
+            <td>{{student.fav_language}}</td>
+            <td>{{student.comment}}</td>
+        <tr>
+    {% endfor %}
+    </tbody>
+    
+</table>
+
+<a href="/">Return Home</a>
