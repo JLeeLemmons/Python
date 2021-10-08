@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <h1> Add a Painting</h1>
+    <a href="/add/new/painting">Add Painting</a>
+    <a href="/paintings">Dashboard</a>
+    <a href="/logout">Logout</a>
+    <form action="/edit/painting/update/{{painting['painting_id']}}" method="POST">
+        <p>Title: <input type="text" name="title"value="{{painting['title']}}"></p>
+        <p>Description: <input type="text" name="description" value="{{painting['description']}}"></p>
+        <p>Price: <input type="number" name="price" value="{{painting['price']}}"></p>
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
+

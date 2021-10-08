@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body>
+    <h1>Welcome {{user['first_name']}} </h1>
+    <a href="/add/new/painting">Add Painting</a>
+    <a href="/logout">Logout</a>
+
+    <h3>Paintings</h3>
+    {% for painting in paintings %}
+    <ul>
+        <li><a href="/show/painting/{{painting['painting_id']}}">{{painting['title']}} </a>by {{painting['first_name']}} {{painting['last_name']}} <a href="/delete/painting/{{painting['painting_id']}}">Delete</a> | <a href="/edit/painting/{{painting['painting_id']}}">Edit</a></li>
+    </ul>
+    {% endfor %}
+</body>
+</html>

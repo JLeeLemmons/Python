@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showing</title>
+</head>
+<body>
+    <a href="/add/new/painting">Add Painting</a>
+    <a href="/paintings">Dashboard</a>
+    <ul>
+        <li>{{painting['title']}}</li>
+        <li>Painted By: {{painting['first_name']}} {{painting['last_name']}}</li>
+        <li>Description: {{painting['description']}}</li>
+        <li>Price: {{painting['price']}}</li>
+    </ul>
+</body>
+</html>
