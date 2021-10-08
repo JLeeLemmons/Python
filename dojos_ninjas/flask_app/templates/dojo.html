@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo</title>
+</head>
+<body>
+    {% for dojo in dojos %}
+        <h1>{{dojo.name}} Ninjas</h1>
+    {% endfor %}
+    <table>
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </thead>
+        {% for ninja in ninjas %}
+        <tbody>
+            <tr>{{ninja.first_name}}</tr>
+            <tr>{{ninja.last_name}}</tr>
+            <tr>{{ninja.age}}</tr>
+        </tbody>
+        {% endfor %}
+    </table>
+    <a href="/">Home</a>
+</body>
+</html>
